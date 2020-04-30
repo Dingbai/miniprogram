@@ -1,0 +1,19 @@
+<!-- index.wxml -->
+<view class="container">
+  <view class="title">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{target}}">
+      <view class="picker">当前语言：{{target[index]}}</view>
+    </picker>
+  </view>
+  <view class="section center">
+    <textarea placeholder="请输入内容" auto-focus bindinput='translate' />
+  </view>
+  <view class="title">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{destination}}">
+      <view class="picker">当前语言：{{destination[index]}}</view>
+    </picker>
+  </view>
+  <view class="section center">
+    <textarea placeholder="请输入内容" bindinput='translate' value='{{destinationValue}}' />
+  </view>
+</view>
