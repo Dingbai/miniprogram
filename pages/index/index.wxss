@@ -10,3 +10,13 @@ textarea {
   text-align: center;
   padding: 10px 0;
 }
+.toolbar cover-image {
+  width: 24px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.toolbar {
+  margin: 10px auto;
+  width: 300px;
+}

@@ -1,19 +1,23 @@
 <!-- index.wxml -->
 <view class="container">
   <view class="title">
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{target}}">
+    <picker bindchange="bindTargetPickerChange" value="{{index}}" range="{{target}}">
       <view class="picker">当前语言：{{target[index]}}</view>
     </picker>
   </view>
   <view class="section center">
     <textarea placeholder="请输入内容" auto-focus bindinput='translate' />
   </view>
+  <!-- <view class="toolbar">
+    <cover-image bindtap='record' src='https://www.gstatic.cn/images/icons/material/system_gm/2x/mic_black_24dp.png'></cover-image>
+    <cover-image src='https://www.gstatic.cn/images/icons/material/system_gm/2x/mic_black_24dp.png'></cover-image>
+  </view> -->
   <view class="title">
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{destination}}">
-      <view class="picker">当前语言：{{destination[index]}}</view>
+    <picker bindchange="bindDestinationPickerChange" value="{{i}}" range="{{target}}">
+      <view class="picker">当前语言：{{target[i]}}</view>
     </picker>
   </view>
   <view class="section center">
-    <textarea placeholder="请输入内容" bindinput='translate' value='{{destinationValue}}' />
+    <textarea placeholder="翻译" bindinput='translate' value='{{destinationValue}}' disabled='true' />
   </view>
 </view>
